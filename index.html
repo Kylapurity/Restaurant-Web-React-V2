@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Food</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/output.css">
+</head>
+
+<body>
+    <!----Navbar-->
+    <nav class="relative container mx-auto p-4">
+        <div class="flex items-center justify-between">
+            <!--Logo-->
+            <div class="pt-2">
+                <img class="w-20 text-3xl space-x-8" src="images/steaak.jpg" alt="">
+            </div>
+            <!--Menu-->
+            <div class=" hidden space-x-10 md:flex justify-between ">
+                <a href="#Hero"
+                    class=" text-1.5xl text-gray-700 hover:text-gray-900 hover:underline  active:underline font-bold uppercase">Home</a>
+                <span class="mx-6"></span>
+                <a href="#menu"
+                    class=" text-1xl text-gray-700 hover:text-gray-900 hover:underline  active:underline font-bold uppercase">Menu</a>
+                <span class="mx-6"></span>
+                <a href="#"
+                    class=" text-1xl text-gray-700 hover:text-gray-900 hover:underline  active:underline font-bold uppercase">Reservation</a>
+                <span class="mx-6"></span>
+                <a href="#Contact"
+                    class=" text-1xl text-gray-700 hover:text-gray-900  hover:underline  active:underline font-bold uppercase">Contact</a>
+            </div>
+            <!--Button-->
+            <a href="#"
+                class="hidden p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block uppercase">Get
+                Started</a>
+
+            <!-- Hamburger Icon -->
+            <button id="menu-btn"  class="block  md:hidden  border-black focus:outline-none">
+                <span class="menu-btn-top"></span>
+                <span class="menu-btn-middle"></span>
+                <span class="menu-btn-bottom"></span>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden">
+            <div id="menu"
+                class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                <a href="#">Home</a>
+                <a href="#">Menu</a>
+                <a href="#">Reservation</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!--Hero Section-->
+    <section id="hero">
+        <div class="container mx-auto flex items-center justify-around p-4">
+            <div class="w-1/2">
+                <h1 class="text-5xl font-bold text-gray-800 ">Delicious And Juicy Food</h1>
+                <p class="text-2xl text-gray-600 mt-5 font-medium">We make the most delicious food in the world!</p>
+                <span class="mt-6"></span>
+                <div class="mt-8">
+                    <a href="#"
+                        class="p-4 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight uppercase ">Book
+                        a Table</a>
+                </div>
+            </div>
+            <div class="w-1/2">
+                <img class="space-x-3 border rounded-lg" src="images/madie-hamilton-Q9yr-cvJr30-unsplash.jpg"
+                    alt="chefs-bg">
+            </div>
+        </div>
+    </section>
+    <!--Menu-->
+    <section id="menu" class="container mx-auto p-6">
+        <h1 class="text-4xl font-bold text-gray-800 text-center hover:underline">Our Menu</h1>
+        <p class="text-2xl text-gray-600 mt-5 text-center font-medium">Explore our menu and indulge in a culinary
+            experience like no other.</p>
+        <span class="mt-6"></span>
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+            <div class="bg-white rounded-lg shadow-lg">
+                <img class="w-full rounded-t-lg" src="images/Smoked-Chuck-Roast-Texas-Style-1.jpg" alt="steak">
+                <div class="p-6">
+                    <h1 class="text-2xl font-bold text-gray-800">Steak</h1>
+                    <p class="text-gray-600 mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                        malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum.</p>
+                    <span class="mt-6"></span>
+                    <div class="mt-8">
+                        <a href="#"
+                            class="p-3 px-6 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight uppercase">Order
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg">
+                <img class="w-full h-1/2 rounded-t-lg" src="images/amin-ramezani-DEzv3gH5rIg-unsplash (1).jpg"
+                    alt="pizza">
+                <div class="p-6">
+                    <h1 class="text-2xl font-bold text-gray-800">Pizza</h1>
+                    <p class="text-gray-600 mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                        malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum.</p>
+                    <span class="mt-6"></span>
+                    <div class="mt-8">
+                        <a href="#"
+                            class="p-3 px-6 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight uppercase">Order
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg">
+                <img class="w-full rounded-t-lg" src="images/sk-CK6tjAIMJWM-unsplash.jpg" alt="pizza">
+                <div class="p-6">
+                    <h1 class="text-2xl font-bold text-gray-800">Burgers</h1>
+                    <p class="text-gray-600 mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                        malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum.</p>
+                    <span class="mt-6"></span>
+                    <div class="mt-8">
+                        <a href="#"
+                            class="p-3 px-6 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight uppercase">Order
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!---Reservation-->
+        <section>
+            <div class="container mx-auto p-6">
+                <h1 class="text-4xl font-bold text-gray-800 text-center hover:underline">Reservation</h1>
+                <p class="text-2xl text-gray-600 mt-5 text-center font-medium">Book a table and enjoy a delicious meal
+                    with your loved ones.</p>
+                <div class="flex justify-center mt-8">
+                    <form class="w-full flex flex-col space-y-10">
+                        <div class="flex flex-wrap justify-between">
+                            <input type="number" id="input"
+                                class="p-4 rounded-2xl text-black border w-full md:w-auto pt-6"
+                                placeholder=" Number of Guests" />
+                            <span class="mx-6 "></span>
+                            <input type="date" id="input" class="p-4 rounded-2xl  text-black border w-full md:w-auto"
+                                placeholder="Date" />
+                            <span class="mx-6"></span>
+                            <input type="time" id="input" class="p-4 rounded-2xl  text-black border w-full md:w-auto"
+                                placeholder="Time" />
+                        </div>
+                        <div class="flex justify-center mt-6">
+                            <button
+                                class="p-4 text-white bg-brightRed w-1/2 rounded-full hover:bg-brightRedLight focus:outline-none self-center">Book
+                                Now</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="flex mt-4 p-10">
+                    <div class="flex flex-wrap w-1/2 p-4 md:w-48">
+                        <img src="images/freshly-italian-pizza-with-mozzarella-cheese-slice-generative-ai.jpg"
+                            class="w-1/3 rounded-lg object-cover" alt="Image 1">
+                    </div>
+                    <div class="flex flex-wrap w-1/2 p-4">
+                        <img src="images/pizza-pizza-filled-with-tomatoes-salami-olives.jpg"
+                            class="w-1/3 rounded-lg object-cover md:w-1/12" alt="Image 2">
+                    </div>
+                    <div class="flex flex-wrap w-1/2 p-4">
+                        <img src="images/delicious-burger-with-many-ingredients-isolated-white-background-tasty-cheeseburger-splash-sauce.jpg"
+                            class="w-1/3 rounded-lg object-cover md:w-1/12" alt="Image 3">
+                    </div>
+                    <div class="flex flex-wrap w-1/2 p-4">
+                        <img src="images/miet mix.jpg" class="w-1/3 rounded-lg object-cover md:w-1/12" alt="meta">
+                    </div>
+                    <div class="flex flex-wrap w-1/2 p-4">
+                        <img src="images/freris.jpg" class="w-1/3 rounded-lg object-cover md:w-1/12" alt="fies">
+                    </div>
+                    <div class="flex flex-wrap w-1/2  h-6 p-4">
+                        <img src="images/food-photographer-E94j3rMcxlw-unsplash.jpg"
+                            class="w-1/3  rounded-lg object-cover md:w-1/12" alt="food">
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!---Footer-->
+        <section id="Contact">
+            <!-- Footer -->
+            <footer class="bg-veryDarkBlue rounded-2xl">
+                <!-- Flex Container -->
+                <div
+                    class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0 pt-4">
+                    <!-- Logo and social links container -->
+                    <div
+                        class="flex flex-row-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
+                        <div class="mx-auto my-6 text-center text-white md:hidden">
+                            Copyright &copy; 2024, All Rights Reserved
+                        </div>
+                        <!-- Logo -->
+                        <div>
+                            <img src="images/balazs-kelemen-pRUVqe3IQm0-unsplash.jpg" class="w-24 cursor-pointer"
+                                alt="" />
+                        </div>
+                    </div>
+                    <!-- Social Links Container -->
+                    <div class="flex justify-center space-x-6">
+                        <!-- Link 1 -->
+                        <a href="#">
+                            <i id="icons" class='bx bxl-facebook-circle'></i>
+                        </a>
+                        <!-- Link 2 -->
+                        <a href="#">
+                            <i id="icons" class='bx bxl-instagram-alt'></i>
+                        </a>
+                        <!-- Link 3 -->
+                        <a href="#">
+                            <i id="icons" class='bx bxl-twitter'></i>
+                        </a>
+                    </div>
+                    <!-- List Container -->
+                    <div class="flex justify-around space-x-32">
+                        <div class="flex flex-col space-y-3 text-white">
+                            <a href="#" class="hover:text-brightRed">Home</a>
+                            <a href="#" class="hover:text-brightRed">Menu</a>
+                            <a href="#" class="hover:text-brightRed">Reservation</a>
+                            <a href="#" class="hover:text-brightRed">Contact</a>
+                        </div>
+                        <div class="flex flex-col space-y-3 text-white">
+                            <a href="#" class="hover:text-brightRed">Careers</a>
+                            <a href="#" class="hover:text-brightRed">Community</a>
+                            <a href="#" class="hover:text-brightRed">Privacy Policy</a>
+                        </div>
+                    </div>
+
+                    <!-- Input Container -->
+                    <div class="flex flex-col justify-between">
+                        <form>
+                            <div class="flex space-x-3">
+                                <input type="text" class="flex-1 px-6 p-4 rounded-full focus:outline-none"
+                                    placeholder="Contact Us And Get A Table" />
+                                <button
+                                    class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none">
+                                    Go
+                                </button>
+                            </div>
+                        </form>
+                        <div class="hidden text-white md:block">
+                            Copyright &copy; 2024, All Rights Reserved
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+        <script src="Scripts/home.js"></script>
+</body>
+
+</html>
